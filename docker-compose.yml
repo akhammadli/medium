@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  redis-server:
+    image: 'redis'
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=test
+  spring-boot-app:
+    build: ./demo
+  react-app:
+    build: ./react-app
+  proxy:
+    build: ./nginx
+    restart: always
+    ports:
+      - "80:80"

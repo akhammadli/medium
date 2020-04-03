@@ -1,0 +1,63 @@
+.App {
+    top: 50px;
+    position: relative;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    padding-bottom: 1px;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding: 10px;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.Palindrome {
+    position: relative;
+    margin-top: 20px;
+}
+
+.history-div {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.history-div ul {
+    -webkit-padding-start: 0px;
+}
+
+.history-div ul li {
+    list-style: none;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

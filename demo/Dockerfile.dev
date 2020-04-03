@@ -1,0 +1,5 @@
+FROM openjdk:12-jdk-alpine
+WORKDIR /code/
+COPY build/libs/demo.jar .
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","demo.jar"]
