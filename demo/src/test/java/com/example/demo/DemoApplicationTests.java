@@ -10,6 +10,8 @@ class DemoApplicationTests {
 	void contextLoads() {
 
 
+		System.out.println("test");
+
 
 	}
 
